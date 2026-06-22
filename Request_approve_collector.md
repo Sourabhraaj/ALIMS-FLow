@@ -56,7 +56,8 @@ flowchart TD
 |---|---|
 | Item Name | Arm / Ammunition name |
 | Category | Arms or Ammunition |
-| Max Qty | Requested Qty | Quantity requested by dealer |
+| Max Qty | Maximum allowed quantity for specific item |
+| Requested Qty | Quantity requested by dealer |
 | Allowed Qty | Editable — Collector sets this (≤ Requested Qty) |
 
 ---
