@@ -30,7 +30,7 @@ flowchart TD
 
     F -->|All items reviewed| H[Approve Request]
 
-    H --> I[System generates NOC\nLinked to Request ID]
+    H --> I[System generates NOC]
 
     I --> J[Request Status → Approved]
     I --> K[NOC visible on\nCollector's approved request]
