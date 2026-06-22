@@ -56,7 +56,7 @@ flowchart TD
 |---|---|
 | Item Name | Arm / Ammunition name |
 | Category | Arms or Ammunition |
-| Max Requested Qty | Quantity requested by dealer |
+| Max Qty | Requested Qty | Quantity requested by dealer |
 | Allowed Qty | Editable — Collector sets this (≤ Requested Qty) |
 
 ---
@@ -67,7 +67,7 @@ flowchart TD
 flowchart LR
     A[Request Submitted\nStatus: Pending] --> B[Collector Reviews\n& Adjusts Qty]
     B --> C[Collector Approves\nStatus: Approved]
-    C --> D[NOC Generated\nLinked to Request ID]
+    C --> D[NOC Generated]
     D --> E[NOC on Collector View]
     D --> F[NOC on Dealer View]
     F --> G[Dealer proceeds\nwith Inward Entry]
