@@ -6,6 +6,19 @@
 
 ---
 
+## Pre-Requisites
+
+> The following conditions must be met before the onboarding process begins in ALIMS.
+
+- Citizen and Dealer data will be imported from the **NDAL system** through API integration.
+- NDAL will provide details such as **NDAL Number, Name, License Type, License Validity, Address,** and **Status**.
+- Imported data will be used to onboard Citizens and Dealers in ALIMS.
+- Citizen type (**Individual, Shooter, or Organisation**) will be identified from the license details.
+- Permitted Arms, Ammunition, and applicable Quotas will be assigned based on the license information.
+- Only successfully onboarded and verified records will become **active** in the system.
+
+---
+
 ## Overview
 
 ```mermaid
