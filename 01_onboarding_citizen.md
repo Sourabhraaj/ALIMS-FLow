@@ -44,12 +44,28 @@ flowchart TD
     style CRL fill:#16A34A,color:#fff,stroke:#15803D
 ```
 ## DocTypes Used
+
+
 | 
-NDAL Citizen Profile 
+ 1 
+| 
+ NDAL Citizen Profile 
 |
-|Citizen Arms Quota List|
-|Citizen Ammunition Quota list |
-|NDAL Citizen License List |
+| 
+ 2 
+| 
+ Citizen Arms Quota List 
+|
+| 
+ 3 
+| 
+ Citizen Ammunition Quota List 
+|
+| 
+ 4 
+| 
+ NDAL Citizen License List 
+|
 
 
 ---
