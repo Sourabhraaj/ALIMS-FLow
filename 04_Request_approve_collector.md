@@ -78,6 +78,10 @@ flowchart LR
     style D fill:#4A6CF7,color:#fff,stroke:#3451D1
     style G fill:#16A34A,color:#fff,stroke:#15803D
 ```
+## DocTypes Used
+|  DM USER |
+| Dealer Procurement Request |
+| Dealer NOC |
 
 ---
 

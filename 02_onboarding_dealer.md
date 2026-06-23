@@ -46,6 +46,10 @@ flowchart TD
     style DCOMP fill:#16A34A,color:#fff,stroke:#15803D
     style DRL fill:#16A34A,color:#fff,stroke:#15803D
 ```
+## DocTypes Used
+| NDAL Dealer Profile |
+|Dealers Arms Quota List|
+|Dealers Ammunition Quota list |
 
 ---
 

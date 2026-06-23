@@ -63,6 +63,12 @@ flowchart TD
 | Received Qty < Allowed Qty | Partial — further inward allowed within 30 days |
 | NOC expired before completion | Expired — no further entry |
 
+## DocTypes Used
+| Dealer Stock Ledger Entry |
+| NDAL Dealer Profile |
+| Dealer NOC |
+| Stock Item List |
+
 ---
 
 *Document: ALIMS_inward_entry_flow.md | System: ALIMS v1.0 | Actor: Dealer*
