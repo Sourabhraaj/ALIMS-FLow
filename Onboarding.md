@@ -16,6 +16,7 @@
 - Citizen type (**Individual, Shooter, or Organisation**) will be identified from the license details.
 - Permitted Arms, Ammunition, and applicable Quotas will be assigned based on the license information.
 - Only successfully onboarded and verified records will become **active** in the system.
+- While onboarding dealer there will be initial stock entry which will be editable till the dealer makes it first transaction.
 
 ---
 
