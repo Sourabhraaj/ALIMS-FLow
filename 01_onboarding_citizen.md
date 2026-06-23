@@ -42,8 +42,7 @@ flowchart TD
     style ERR1 fill:#EF4444,color:#fff,stroke:#DC2626
     style ACTIVE fill:#16A34A,color:#fff,stroke:#15803D
     style CRL fill:#16A34A,color:#fff,stroke:#15803D
-
-
+```
 ## DocTypes Used
 
 - NDAL Citizen Profile
@@ -51,7 +50,7 @@ flowchart TD
 - Citizen Ammunition Quota List
 - NDAL Citizen License List
 
-```
 
+---
 
 *Document: onboarding_citizen.md | System: ALIMS v1.0 | Actor: Collector Office*
