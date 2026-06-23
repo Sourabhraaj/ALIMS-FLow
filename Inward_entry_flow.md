@@ -21,51 +21,46 @@ flowchart TD
 
     B --> C{NOC Status}
     C -->|Expired| D[❌ No transaction allowed\nNOC Expired]
-    C -->|Valid| E{Select Inward\nEntry Type}
+    C -->|Valid| E{Select Entry\nMethod}
 
-    E -->|Complete Inward| F[All items received\nat once]
-    E -->|Partial Inward| G[Partial stock received\nReceiving Status: Partial]
+    E -->|Manual Entry| F[Enter Received Qty\nper Item · Fill SKU Number]
+    E -->|Excel Upload| G[Download Format\nFill & Upload Sheet]
 
-    F --> H{Select Entry\nMethod}
-    G --> H
+    G --> H[Review & Edit\nUploaded Data]
+    H --> I{Data Valid?}
+    I -->|Errors found| H
+    I -->|Valid| J[Confirm Entry]
+    F --> J
 
-    H -->|Manual Entry| I[Enter Received Qty\nper Item\nFill SKU Number]
-    H -->|Excel Upload| J[Download Format\nFill & Upload Sheet]
+    J --> K[Dealer Inventory Updated]
+    K --> L{Received Qty vs\nAllowed Qty}
 
-    J --> K[Review & Edit\nUploaded Data]
-    K --> L{Data Valid?}
-    L -->|Errors found| K
-    L -->|Valid| M[Confirm Entry]
-    I --> M
+    L -->|Received = Allowed| M[✅ Receiving Status:\nCompleted]
+    L -->|Received < Allowed| N[⚠️ Receiving Status:\nPartial\nRemaining qty still pending]
 
-    M --> N[Dealer Inventory Updated]
-    N --> O{Entry Type?}
-    O -->|Complete| P[Receiving Status:\nCompleted]
-    O -->|Partial| Q[Receiving Status:\nPartial\nRemaining items pending]
-    Q --> R[Dealer can do\nanother Inward Entry\nagainst same NOC]
-    R --> C
+    N --> O[Dealer can raise\nanother Inward Entry\nagainst same NOC\nwithin 30 days]
+    O --> C
 
     style A fill:#4A6CF7,color:#fff,stroke:#3451D1
     style C fill:#F59E0B,color:#fff,stroke:#D97706
     style D fill:#EF4444,color:#fff,stroke:#DC2626
     style E fill:#F59E0B,color:#fff,stroke:#D97706
-    style H fill:#F59E0B,color:#fff,stroke:#D97706
+    style I fill:#F59E0B,color:#fff,stroke:#D97706
     style L fill:#F59E0B,color:#fff,stroke:#D97706
-    style O fill:#F59E0B,color:#fff,stroke:#D97706
+    style J fill:#16A34A,color:#fff,stroke:#15803D
+    style K fill:#16A34A,color:#fff,stroke:#15803D
     style M fill:#16A34A,color:#fff,stroke:#15803D
-    style N fill:#16A34A,color:#fff,stroke:#15803D
-    style P fill:#16A34A,color:#fff,stroke:#15803D
-    style Q fill:#D97706,color:#fff,stroke:#B45309
+    style N fill:#D97706,color:#fff,stroke:#B45309
 ```
 
 ---
 
-## Receiving Status Summary
+## Receiving Status Logic
 
-| Scenario | Receiving Status |
+| Condition | Receiving Status |
 |---|---|
-| All items received in one go | Completed |
-| Partial stock received | Partial |
+| Received Qty = Allowed Qty | Completed |
+| Received Qty < Allowed Qty | Partial — further inward allowed within 30 days |
 | NOC expired before completion | Expired — no further entry |
 
 ---
