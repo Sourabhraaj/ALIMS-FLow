@@ -47,10 +47,10 @@ flowchart TD
     style DRL fill:#16A34A,color:#fff,stroke:#15803D
 ```
 ## DocTypes Used
-| NDAL Dealer Profile |
-|Dealers Arms Quota List|
-|Dealers Ammunition Quota list |
 
+- NDAL Dealer Profile
+- Dealers Arms Quota List
+- Dealers Ammunition Quota List
 ---
 
 *Document: onboarding_dealer.md | System: ALIMS v1.0 | Actor: Collector Office*

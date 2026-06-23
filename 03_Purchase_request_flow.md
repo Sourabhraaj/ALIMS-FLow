@@ -61,11 +61,12 @@ flowchart TD
     style S fill:#16A34A,color:#fff,stroke:#15803D
 ```
 ## DocTypes Used
-| NDAL Dealer Profile |
-|Vendor Master|
-|Procurement Arms List |
-|Procurement Ammunition List |
-|Dealer NOC|
+
+- NDAL Dealer Profile
+- Vendor Master
+- Procurement Arms List
+- Procurement Ammunition List
+- Dealer NOC
 ---
 
 *Document: ALIMS_flow.md | System: ALIMS v1.0 | Actor: Collector Office / Dealer*

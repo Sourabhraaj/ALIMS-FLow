@@ -94,9 +94,10 @@ flowchart LR
     style C fill:#16A34A,color:#fff,stroke:#15803D
 ```
 ## DocTypes Used
-| NDAL Dealer Profile |
-| NDAL Citizen Profile |
-| Stock Item List |
+
+- NDAL Dealer Profile
+- NDAL Citizen Profile
+- Stock Item List
 ---
 
 *Document: ALIMS_sales_flow.md | System: ALIMS v1.0 | Actor: Dealer*

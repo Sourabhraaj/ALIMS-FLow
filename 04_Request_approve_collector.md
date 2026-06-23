@@ -79,10 +79,10 @@ flowchart LR
     style G fill:#16A34A,color:#fff,stroke:#15803D
 ```
 ## DocTypes Used
-|  DM USER |
-| Dealer Procurement Request |
-| Dealer NOC |
 
+- DM User
+- Dealer Procurement Request
+- Dealer NOC
 ---
 
 *Document: ALIMS_purchase_approval_flow.md | System: ALIMS v1.0 | Actor: Collector Office*
