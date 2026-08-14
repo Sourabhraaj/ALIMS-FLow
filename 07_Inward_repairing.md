@@ -29,6 +29,8 @@ flowchart TD
     style L fill:#f7c1c1,stroke:#a32d2d
     style M fill:#c0dd97,stroke:#3b6d11
     style N fill:#c0dd97,stroke:#3b6d11
+```
+
 ## Inward Entry — Conditional Scenarios Matrix
 
 | # | Scenario | NDAL Search Result | License Status | Arm Selected | System Behavior | Data Stored? |
@@ -47,4 +49,3 @@ flowchart TD
 | 12 | Arm SKU already inward by a different dealer | Found | Active | Yes | Reject - "SKU already assigned elsewhere" | No |
 | 13 | Licensee record exists but is blacklisted/flagged | Found | Blacklisted | Yes | Reject - "Licensee flagged, contact admin" | No |
 | 14 | Dealer re-opens same NDAL after successful inward (re-check) | Found | Active | Remaining arms shown (already-inward ones excluded) | Normal flow continues | Yes (for new selection) |
-```
